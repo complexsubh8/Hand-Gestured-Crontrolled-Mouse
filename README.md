@@ -1,73 +1,89 @@
-🖐️ Hand Gesture Controlled Mouse using Python
+# 🖐️ Hand Gesture Controlled Mouse (Python)
 
-A computer vision–based virtual mouse that allows users to control mouse movement and clicks using hand gestures, eliminating the need for physical input devices. This project uses a webcam to track hand landmarks in real time and map them to mouse actions.
+Control your mouse using **hand gestures** through a webcam using computer vision techniques.
 
-🚀 Features
+---
 
-🖱️ Control mouse cursor using hand movement
+## ✨ Features
 
-👆 Left click using finger gesture
+- Mouse cursor movement using hand motion
+- Left and right click using finger gestures
+- Real-time hand tracking
+- No external hardware required
+- Lightweight and easy to use
 
-✌️ Right click using finger gesture (optional)
+---
 
-🔍 Real-time hand tracking
+## 🧰 Tech Stack
 
-📷 Webcam-based input
+- Python
+- OpenCV
+- MediaPipe
+- PyAutoGUI
+- NumPy
 
-💻 Works on Windows / Linux / macOS
-
-🛠️ Technologies Used
-
-Python
-
-OpenCV – for video capture and image processing
-
-MediaPipe – for hand landmark detection
-
-PyAutoGUI – for controlling mouse actions
-
-NumPy – for calculations and array operations
-
-📁 Project Structure
-hand-gesture-mouse/
-│
-├── main.py                # Main program
-├── requirements.txt       # Required libraries
-├── README.md              # Project documentation
-└── assets/                # Demo images / videos (optional)
-
-⚙️ Installation
-
-Clone the repository
-
-git clone https://github.com/your-username/hand-gesture-mouse.git
-cd hand-gesture-mouse
+---
 
 
-Install dependencies
+---
 
-pip install -r requirements.txt
-
-
-If requirements.txt is not present:
+## ⚙️ Installation
 
 pip install opencv-python mediapipe pyautogui numpy
 
-▶️ How to Run
-python main.py
+---
+
+## ▶️ Run the Project
 
 
-Make sure:
+Make sure your webcam is enabled and lighting is sufficient.
 
-Your webcam is connected
+---
 
-You have proper lighting for better hand detection
+## ✋ Gesture Mapping
 
-✋ Gesture Controls (Example)
-Gesture	Action
-Index finger up	Move mouse
-Index + Thumb close	Left click
-Index + Middle close	Right click
-Palm open	Pause control
+| Gesture | Action |
+|--------|--------|
+| Index finger up | Move cursor |
+| Thumb + Index close | Left click |
+| Index + Middle close | Right click |
+| Palm open | Pause movement |
 
-(Gestures may vary based on implementation)
+---
+
+## 🧠 Working Principle
+
+- Capture webcam frames
+- Detect hand landmarks using MediaPipe
+- Track fingertip coordinates
+- Map hand movement to screen resolution
+- Perform mouse actions using PyAutoGUI
+
+---
+
+## 🚧 Limitations
+
+- Sensitive to lighting conditions
+- Minor latency on low-end systems
+- Accuracy depends on webcam quality
+
+---
+
+## 🔮 Future Improvements
+
+- Scroll control
+- Gesture customization
+- Multi-hand support
+- Improved smoothing and accuracy
+
+---
+
+## 👤 Author
+
+Subham
+
+---
+
+## 📜 License
+
+MIT License
